@@ -2,13 +2,13 @@
 # 0, 1, 1, 2, 3, 5, 8, 13, 21
 
 
-def fibonacci():
+def fibonacci(limite):
     penultimo = 0
     ultimo = 1
     print(f'{penultimo},{ultimo}', end=',')
     # print('{}, {}'.format(penultimo, ultimo), end=',')
 
-    while True:
+    while ultimo < limite:
         proximo = penultimo + ultimo
         print(proximo, end=',')
         penultimo = ultimo
@@ -16,4 +16,4 @@ def fibonacci():
 
 
 if __name__ == '__main__':
-    fibonacci()
+    fibonacci(20000)
